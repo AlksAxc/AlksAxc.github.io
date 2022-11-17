@@ -4,6 +4,31 @@
   
     
     <entry>
+      <title>八股文记录</title>
+      <link href="/2022/11/17/%E5%85%AB%E8%82%A1%E6%96%87%E8%AE%B0%E5%BD%95/"/>
+      <url>/2022/11/17/%E5%85%AB%E8%82%A1%E6%96%87%E8%AE%B0%E5%BD%95/</url>
+      
+        <content type="html"><![CDATA[<h1 id="八股文记录"><a href="#八股文记录" class="headerlink" title="八股文记录"></a>八股文记录</h1><p><strong>1. JVM内存区域分为那五个部分？</strong><br><strong>堆，方法区，虚拟机栈，本地方法栈，程序计数器</strong></p><p><strong>2. 如何判断一个对象可以被回收？</strong><br><strong>每个对象都有一个私有的引用计数属性新增一个引用计数+1，释放一个引用时计数-1，引用计数为0则表示对象可被回收</strong></p><p><strong>3. 什么是索引</strong><br><strong>索引是SQlServer编排数据的内部方法，是检索表中数据的直接通道。它类似汉语词典里面的拼音目录，通过它可以快速查找到某个字词</strong></p><p><strong>4.索引分类</strong><br><strong>唯一索引： 创建唯一约束会自动创建唯一索引。 它对应的列中仅允许有一个null值。</strong><br><strong>主键索引： 是唯一索引的一种特殊类型。创建主键会自动创建主键索引。 要求主键中的每个值是非空，唯一的。</strong><br><strong>聚集索引： 表中各行的物理顺序与键值的逻辑顺序相同。</strong></p><p><strong>4.什么情况下不走索引</strong><br><strong>查询谓词没有使用索引的主要边界,换句话说就是SELECT * 可能会导致不走索引</strong><br><strong>索引列上有函数运算，导致不走索引。</strong></p><p><strong>5. Mybatis缓存 一级缓存和二级缓存</strong><br><strong>MyBatis 的一级缓存是基于数据库会话(SqlSession 对象)的，默认开启。二级缓存是基于全局(nameSpace)的，开启需要配置。</strong></p><p><strong>6. IO 有哪几种方式</strong><br><strong>阻塞IO</strong><br><strong>同步非阻塞IO</strong><br><strong>信号驱动式IO</strong><br><strong>多路复用IO</strong><br><strong>异步IO</strong></p><p><strong>7. java中有哪些集合类型以及他们的实现类</strong><br><strong>set(集合)list(列表)和map(映射)</strong><br><strong>set：Object类和hashSet类</strong><br><strong>list：ArrayList和LinkedList以及Vector</strong><br><strong>map：HashMap和LinkedHashMap以及TreeMap</strong></p><p><strong>8.HashMap底层实现，扩容了解吗</strong><br><strong>HashMap 底层就是一个数组结构，数组中的每一项又是一个链表。当新建一个 HashMap 的时候，就会初始化一个数组</strong></p><p><strong>9.分页用什么关键词？</strong><br><strong>Mysql中使用limit关键字</strong><br><strong>Oracle分页使用rownum关键字</strong><br><strong>SQLServer分页:使用top关键字</strong></p><p><strong>10. 在Mybatis面试中常涉及到关于#{}和${}的区别</strong><br><strong>#{}是预编译处理，$ {}是字符串替换</strong><br><strong>使用 #{} 可以有效的防止SQL注入，提高系统安全性</strong></p><p><strong>11.SpringBoot和SpringMVC区别</strong><br><strong>SpringBoot只是一个配置工具,整合工具,辅助工具. SpringMvc是框架,项目中实际运行的代码</strong></p><p><strong>12. 数据库三范式</strong><br><strong>第一范式(1NF)：属性不可分割，即每个属性都是不可分割的原子项。(实体的属性即表中的列)</strong><br><strong>第二范式(2NF)：满足第一范式；且不存在部分依赖，即非主属性必须完全依赖于主属性。(主属性即主键；完全依赖是针对于联合主键的情况，非主键列不能只依赖于主键的一部分)</strong><br><strong>第三范式(3NF)：满足第二范式；且不存在传递依赖，即非主属性不能与非主属性之间有依赖关系，非主属性必须直接依赖于主属性，不能间接依赖主属</strong></p><p><strong>13. spring cloud 介绍一下说说降级和熔断</strong><br><strong>熔断：相当于保险丝，为了防止整个系统故障，包含自己和整个下游服务 订单服务 -》商品服务 -》用户服务 （还有其它服务会调用此服务，就可能出现异常）-》熔断</strong><br><strong>抛弃一些非核心的接口和数据 旅行箱的例子： 只带核心的物品，抛弃非核心的，等有条件的时候再去携带这些物品</strong></p><p><strong>14. Mybatis 和JDBC 编程对比</strong><br><strong>mybatis也是基于JDBC的。Java与数据库操作仅能通过JDBC完成mybatis也要通过JDBC完成数据查询更新这些动作</strong><br><strong>jdbc存在弊端工作量相对较大，每次都要去创建，关闭，获取</strong></p><p><strong>15：SpringBoot的启动原理</strong><br><strong>通过@SpringBootApplication注解进行启动整个启动过程，最重要的就是检索加载各个组件bean到Spring容器中的过程，</strong></p><p><strong>16: MyBatis动态SQL</strong><br><strong>动态 SQL 是 MyBatis 的强大特性之一。在 JDBC 或其它类似的框架中，开发人员通常需要手动拼接 SQL 语句。根据不同的条件拼接 SQL 语句是一件极其痛苦的工作。例如，拼接时要确保添加了必要的空格，还要注意去掉列表最后一个列名的逗号。而动态 SQL 恰好解决了这一问题，可以根据场景动态的构建查询</strong></p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 面试 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 面试笔记 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>Linux 基本操作命令</title>
       <link href="/2022/11/14/Linux%20%E5%9F%BA%E6%9C%AC%E6%93%8D%E4%BD%9C%E5%91%BD%E4%BB%A4/"/>
       <url>/2022/11/14/Linux%20%E5%9F%BA%E6%9C%AC%E6%93%8D%E4%BD%9C%E5%91%BD%E4%BB%A4/</url>
